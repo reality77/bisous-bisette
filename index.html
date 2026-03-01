@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bisous Bisette — Bijoux pour Mères &amp; Filles</title>
+  <meta name="description" content="Bisous Bisette crée des boucles d'oreilles et des bagues colorées, modernes et joyeuses, pensées pour les mères et les filles qui aiment se faire plaisir." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-kiss">✦</span> bisous bisette
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#story">Notre histoire</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg-shapes" aria-hidden="true">
+      <div class="shape shape--circle shape--coral"></div>
+      <div class="shape shape--circle shape--teal"></div>
+      <div class="shape shape--blob shape--gold"></div>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Bijoux faits avec amour ✨</p>
+      <h1 class="hero__title">
+        Des bijoux qui font<br />
+        <em>sourire</em> mères<br />
+        &amp; filles
+      </h1>
+      <p class="hero__subtitle">
+        Boucles d'oreilles &amp; bagues colorées, modernes et joyeuses —<br />
+        pour les duos qui aiment se faire plaisir.
+      </p>
+      <div class="hero__cta-group">
+        <a href="#collections" class="btn btn--primary">Voir les collections</a>
+        <a href="#story" class="btn btn--ghost">Notre histoire</a>
+      </div>
+    </div>
+    <div class="hero__jewels" aria-hidden="true">
+      <!-- decorative SVG earring & ring -->
+      <svg class="hero__jewel hero__jewel--earring" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="12" r="10" stroke="#E8737A" stroke-width="3" fill="none"/>
+        <line x1="40" y1="22" x2="40" y2="40" stroke="#E8737A" stroke-width="2"/>
+        <ellipse cx="40" cy="60" rx="20" ry="28" fill="#E8737A" opacity="0.15" stroke="#E8737A" stroke-width="2"/>
+        <ellipse cx="40" cy="60" rx="10" ry="14" fill="#E8737A" opacity="0.3"/>
+        <circle cx="40" cy="60" r="5" fill="#E8737A"/>
+      </svg>
+      <svg class="hero__jewel hero__jewel--ring" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="60" r="28" stroke="#5BBFBE" stroke-width="8" fill="none"/>
+        <polygon points="50,5 60,30 87,30 65,48 74,75 50,57 26,75 35,48 13,30 40,30" fill="#D4A84B" opacity="0.9"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== STRIP ===== -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__inner">
+      <span>Boucles d'oreilles</span><span class="strip__dot">✦</span>
+      <span>Bagues</span><span class="strip__dot">✦</span>
+      <span>Fait à la main</span><span class="strip__dot">✦</span>
+      <span>Éditions limitées</span><span class="strip__dot">✦</span>
+      <span>Boucles d'oreilles</span><span class="strip__dot">✦</span>
+      <span>Bagues</span><span class="strip__dot">✦</span>
+      <span>Fait à la main</span><span class="strip__dot">✦</span>
+      <span>Éditions limitées</span><span class="strip__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== COLLECTIONS ===== -->
+  <section class="collections section" id="collections">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nos pièces</p>
+        <h2 class="section-title">Les Collections</h2>
+        <p class="section-desc">Chaque bijou est une déclaration joyeuse — à porter seule ou en duo avec la personne qu'on aime.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs" role="tablist">
+        <button class="tab tab--active" role="tab" data-tab="earrings" aria-selected="true">Boucles d'oreilles</button>
+        <button class="tab" role="tab" data-tab="rings" aria-selected="false">Bagues</button>
+      </div>
+
+      <!-- Earrings Panel -->
+      <div class="products-grid" id="earrings" role="tabpanel">
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--coral">
+            <svg viewBox="0 0 140 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Hoop earring -->
+              <circle cx="70" cy="20" r="12" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+              <line x1="70" y1="32" x2="70" y2="55" stroke="#2D2D2D" stroke-width="2.5"/>
+              <circle cx="70" cy="100" r="42" stroke="#E8737A" stroke-width="8" fill="none"/>
+              <circle cx="70" cy="100" r="24" fill="#E8737A" opacity="0.12"/>
+              <circle cx="70" cy="100" r="8" fill="#E8737A"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Best-seller</span>
+            <h3 class="product-card__name">Cercles Soleil</h3>
+            <p class="product-card__desc">Créoles légères en résine colorée, disponibles en 6 teintes.</p>
+            <p class="product-card__price">28 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--teal">
+            <svg viewBox="0 0 140 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Drop earring -->
+              <circle cx="70" cy="20" r="12" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+              <line x1="70" y1="32" x2="70" y2="55" stroke="#2D2D2D" stroke-width="2.5"/>
+              <ellipse cx="70" cy="115" rx="28" ry="55" fill="#5BBFBE" opacity="0.2" stroke="#5BBFBE" stroke-width="3"/>
+              <ellipse cx="70" cy="115" rx="14" ry="28" fill="#5BBFBE" opacity="0.5"/>
+              <ellipse cx="70" cy="115" rx="6" ry="12" fill="#5BBFBE"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Nouveauté</span>
+            <h3 class="product-card__name">Gouttes d'Été</h3>
+            <p class="product-card__desc">Pendants translucides façon verre soufflé, ultra-légers.</p>
+            <p class="product-card__price">34 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--gold">
+            <svg viewBox="0 0 140 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Star stud earring -->
+              <circle cx="70" cy="20" r="12" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+              <line x1="70" y1="32" x2="70" y2="55" stroke="#2D2D2D" stroke-width="2.5"/>
+              <polygon points="70,60 80,85 107,85 85,101 93,126 70,110 47,126 55,101 33,85 60,85" fill="#D4A84B"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Édition limitée</span>
+            <h3 class="product-card__name">Étoiles Dorées</h3>
+            <p class="product-card__desc">Clous en forme d'étoile plaqué or mat, discrets et pétillants.</p>
+            <p class="product-card__price">22 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--lavender">
+            <svg viewBox="0 0 140 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Floral earring -->
+              <circle cx="70" cy="20" r="12" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+              <line x1="70" y1="32" x2="70" y2="55" stroke="#2D2D2D" stroke-width="2.5"/>
+              <circle cx="70" cy="80" r="12" fill="#C5B8D6"/>
+              <circle cx="46" cy="95" r="12" fill="#C5B8D6"/>
+              <circle cx="94" cy="95" r="12" fill="#C5B8D6"/>
+              <circle cx="54" cy="118" r="12" fill="#C5B8D6"/>
+              <circle cx="86" cy="118" r="12" fill="#C5B8D6"/>
+              <circle cx="70" cy="100" r="14" fill="#8B6BA8"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">Fleurs de Lavande</h3>
+            <p class="product-card__desc">Pendants en forme de fleur, légers et délicats, en acrylique.</p>
+            <p class="product-card__price">26 €</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Rings Panel -->
+      <div class="products-grid products-grid--hidden" id="rings" role="tabpanel">
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--coral">
+            <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="70" cy="70" r="40" stroke="#E8737A" stroke-width="10" fill="none"/>
+              <circle cx="70" cy="30" r="14" fill="#E8737A"/>
+              <circle cx="70" cy="30" r="7" fill="#FFF8F5"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Best-seller</span>
+            <h3 class="product-card__name">Anneau Rose</h3>
+            <p class="product-card__desc">Bague fine en laiton doré sertie d'une pierre de corail.</p>
+            <p class="product-card__price">32 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--teal">
+            <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="70" cy="70" r="40" stroke="#5BBFBE" stroke-width="10" fill="none"/>
+              <polygon points="70,20 83,52 117,52 90,72 100,104 70,84 40,104 50,72 23,52 57,52" fill="#D4A84B"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Nouveauté</span>
+            <h3 class="product-card__name">Étoile Aqua</h3>
+            <p class="product-card__desc">Chevalière turquoise avec une étoile dorée en relief.</p>
+            <p class="product-card__price">38 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--gold">
+            <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="70" cy="70" r="40" stroke="#D4A84B" stroke-width="10" fill="none"/>
+              <circle cx="70" cy="70" r="20" fill="#D4A84B" opacity="0.2"/>
+              <circle cx="70" cy="70" r="8" fill="#D4A84B"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__tag">Duo mère-fille</span>
+            <h3 class="product-card__name">Cercle d'Or</h3>
+            <p class="product-card__desc">Anneau minimaliste en or fin — disponible en duo assorti.</p>
+            <p class="product-card__price">45 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" data-reveal>
+          <div class="product-card__visual product-card__visual--lavender">
+            <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="70" cy="70" r="40" stroke="#C5B8D6" stroke-width="10" fill="none"/>
+              <circle cx="70" cy="30" r="18" fill="#C5B8D6"/>
+              <circle cx="70" cy="30" r="9" fill="#8B6BA8"/>
+            </svg>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">Perle Mauve</h3>
+            <p class="product-card__desc">Bague en argent 925 avec une perle baroque lavande unique.</p>
+            <p class="product-card__price">42 €</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DUO SECTION ===== -->
+  <section class="duo section">
+    <div class="container duo__layout">
+      <div class="duo__visual" aria-hidden="true">
+        <div class="duo__frame duo__frame--back">
+          <svg viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="380" rx="20" fill="#E8737A" opacity="0.08"/>
+            <circle cx="150" cy="140" r="70" fill="#E8737A" opacity="0.12"/>
+            <circle cx="150" cy="140" r="45" fill="#E8737A" opacity="0.18"/>
+            <circle cx="150" cy="140" r="20" fill="#E8737A" opacity="0.7"/>
+            <text x="150" y="260" text-anchor="middle" font-size="52" fill="#E8737A">💞</text>
+            <text x="150" y="330" text-anchor="middle" font-size="18" fill="#E8737A" font-family="serif" font-style="italic">maman &amp; moi</text>
+          </svg>
+        </div>
+        <div class="duo__frame duo__frame--front">
+          <svg viewBox="0 0 260 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="260" height="340" rx="20" fill="#5BBFBE" opacity="0.1"/>
+            <circle cx="80" cy="120" r="30" stroke="#5BBFBE" stroke-width="6" fill="none"/>
+            <circle cx="80" cy="84" r="8" fill="#5BBFBE" opacity="0.6"/>
+            <circle cx="180" cy="130" r="36" stroke="#D4A84B" stroke-width="8" fill="none"/>
+            <polygon points="180,94 188,118 213,118 193,133 200,157 180,143 160,157 167,133 147,118 172,118" fill="#D4A84B" opacity="0.8"/>
+            <text x="130" y="230" text-anchor="middle" font-size="14" fill="#2D2D2D" font-family="serif" font-style="italic">Sets duo assortis</text>
+            <text x="130" y="260" text-anchor="middle" font-size="22" fill="#D4A84B">✦</text>
+          </svg>
+        </div>
+      </div>
+      <div class="duo__text">
+        <p class="section-eyebrow">Une idée cadeau parfaite</p>
+        <h2 class="section-title">Les Sets Duo<br /><em>Mère &amp; Fille</em></h2>
+        <p>Parce que les meilleurs souvenirs se portent. Nos sets duo sont conçus pour se compléter sans être identiques — comme vous.</p>
+        <ul class="duo__list">
+          <li>✦ Boucles assorties en résine colorée</li>
+          <li>✦ Bagues en or fin au design harmonieux</li>
+          <li>✦ Emballage cadeau inclus &amp; personnalisable</li>
+          <li>✦ Message manuscrit offert</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Commander un set</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORY ===== -->
+  <section class="story section" id="story">
+    <div class="container story__layout">
+      <div class="story__text" data-reveal>
+        <p class="section-eyebrow">Qui sommes-nous ?</p>
+        <h2 class="section-title">Notre Histoire</h2>
+        <p>Bisous Bisette est née un dimanche matin, dans la cuisine de Sophie et sa fille Léa, entre une tasse de café et un pot de perles multicolores.</p>
+        <p>Ce qui a commencé comme un jeu est devenu une passion partagée : créer des bijoux qui racontent quelque chose, qui font sourire, qui osent la couleur sans se prendre au sérieux.</p>
+        <p>Chaque pièce est <strong>faite à la main</strong>, en petite série, avec des matériaux soigneusement choisis pour leur légèreté et leur qualité.</p>
+      </div>
+      <div class="story__values" aria-hidden="true">
+        <div class="value-card value-card--coral">
+          <span class="value-card__icon">🎨</span>
+          <h3>Couleur &amp; Joie</h3>
+          <p>Des teintes franches et modernes, jamais criardes.</p>
+        </div>
+        <div class="value-card value-card--teal">
+          <span class="value-card__icon">🤲</span>
+          <h3>Fait main</h3>
+          <p>Chaque bijou est fabriqué à la main, en édition limitée.</p>
+        </div>
+        <div class="value-card value-card--gold">
+          <span class="value-card__icon">💛</span>
+          <h3>Lien &amp; Partage</h3>
+          <p>Pensés pour les duos, portés pour durer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOOKBOOK ===== -->
+  <section class="lookbook section" id="lookbook">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Inspirations</p>
+        <h2 class="section-title">Le Lookbook</h2>
+      </div>
+      <div class="lookbook__grid">
+        <div class="lookbook__item lookbook__item--tall" style="background-color: #FAEAE8;">
+          <div class="lookbook__overlay">
+            <span>Été corail</span>
+          </div>
+          <svg viewBox="0 0 300 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="lookbook__svg">
+            <circle cx="150" cy="200" r="90" fill="#E8737A" opacity="0.18"/>
+            <circle cx="150" cy="90" r="18" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+            <line x1="150" y1="108" x2="150" y2="130" stroke="#2D2D2D" stroke-width="2.5"/>
+            <circle cx="150" cy="200" r="60" stroke="#E8737A" stroke-width="10" fill="none"/>
+            <circle cx="150" cy="330" r="18" fill="#E8737A" opacity="0.9"/>
+            <text x="150" y="430" text-anchor="middle" font-size="16" fill="#E8737A" font-family="serif" font-style="italic">Cercles Soleil</text>
+          </svg>
+        </div>
+        <div class="lookbook__item" style="background-color: #E6F5F5;">
+          <div class="lookbook__overlay">
+            <span>Teintes aqua</span>
+          </div>
+          <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="lookbook__svg">
+            <circle cx="150" cy="140" r="70" fill="#5BBFBE" opacity="0.15"/>
+            <circle cx="150" cy="140" r="45" stroke="#5BBFBE" stroke-width="8" fill="none"/>
+            <polygon points="150,100 162,132 196,132 170,152 180,184 150,164 120,184 130,152 104,132 138,132" fill="#D4A84B" opacity="0.85"/>
+            <text x="150" y="260" text-anchor="middle" font-size="14" fill="#5BBFBE" font-family="serif" font-style="italic">Étoile Aqua</text>
+          </svg>
+        </div>
+        <div class="lookbook__item" style="background-color: #FDF6E3;">
+          <div class="lookbook__overlay">
+            <span>Touches dorées</span>
+          </div>
+          <svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="lookbook__svg">
+            <polygon points="150,50 168,104 225,104 179,138 196,192 150,158 104,192 121,138 75,104 132,104" fill="#D4A84B"/>
+            <circle cx="150" cy="220" r="40" stroke="#D4A84B" stroke-width="8" fill="none"/>
+            <text x="150" y="290" text-anchor="middle" font-size="14" fill="#D4A84B" font-family="serif" font-style="italic">Étoiles Dorées</text>
+          </svg>
+        </div>
+        <div class="lookbook__item lookbook__item--wide" style="background-color: #F0EBF8;">
+          <div class="lookbook__overlay">
+            <span>Set mère &amp; fille</span>
+          </div>
+          <svg viewBox="0 0 600 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="lookbook__svg">
+            <!-- Mother's earring -->
+            <circle cx="200" cy="80" r="14" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+            <line x1="200" y1="94" x2="200" y2="115" stroke="#2D2D2D" stroke-width="2.5"/>
+            <circle cx="200" cy="185" r="55" stroke="#C5B8D6" stroke-width="10" fill="none"/>
+            <circle cx="200" cy="185" r="18" fill="#8B6BA8" opacity="0.7"/>
+            <!-- Daughter's earring -->
+            <circle cx="400" cy="80" r="14" stroke="#2D2D2D" stroke-width="3" fill="#FFF8F5"/>
+            <line x1="400" y1="94" x2="400" y2="115" stroke="#2D2D2D" stroke-width="2.5"/>
+            <circle cx="400" cy="185" r="38" stroke="#C5B8D6" stroke-width="8" fill="none"/>
+            <circle cx="400" cy="185" r="12" fill="#8B6BA8" opacity="0.7"/>
+            <text x="300" y="280" text-anchor="middle" font-size="16" fill="#8B6BA8" font-family="serif" font-style="italic">Fleurs de Lavande — Set duo</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <div class="container newsletter__layout">
+      <div>
+        <h2 class="newsletter__title">Rejoins la famille<br /><em>Bisous Bisette</em></h2>
+        <p class="newsletter__desc">Actualités, nouvelles collections &amp; offres exclusives — directement dans ta boîte mail.</p>
+      </div>
+      <form class="newsletter__form" id="newsletter-form" novalidate>
+        <div class="form-group">
+          <label for="nl-email" class="visually-hidden">Adresse e-mail</label>
+          <input type="email" id="nl-email" name="email" placeholder="ton@email.fr" required autocomplete="email" />
+          <button type="submit" class="btn btn--primary">S'inscrire ✦</button>
+        </div>
+        <p class="form-note">Pas de spam, promis. Désabonnement en 1 clic.</p>
+        <p class="form-success" id="nl-success" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container contact__layout">
+      <div class="contact__info" data-reveal>
+        <p class="section-eyebrow">Parlons bijoux</p>
+        <h2 class="section-title">Nous contacter</h2>
+        <p>Pour une commande personnalisée, un set duo ou simplement nous dire bonjour — on adore ça.</p>
+        <div class="contact__channels">
+          <a href="mailto:bonjour@bisousbisette.fr" class="contact__channel">
+            <span class="contact__channel-icon">✉️</span>
+            <span>bonjour@bisousbisette.fr</span>
+          </a>
+          <a href="https://instagram.com/bisousbisette" class="contact__channel" target="_blank" rel="noopener noreferrer">
+            <span class="contact__channel-icon">📸</span>
+            <span>@bisousbisette</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" id="contact-form" novalidate data-reveal>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Prénom</label>
+            <input type="text" id="name" name="name" placeholder="Sophie" required autocomplete="given-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="sophie@mail.fr" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <select id="subject" name="subject">
+            <option value="">Choisir un sujet…</option>
+            <option value="commande">Commande personnalisée</option>
+            <option value="duo">Set duo mère &amp; fille</option>
+            <option value="pro">Collaboration / presse</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Bonjour ! Je cherche…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Envoyer le message ✦</button>
+        <p class="form-success" id="contact-success" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer__layout">
+      <div class="footer__brand">
+        <p class="footer__logo">✦ bisous bisette</p>
+        <p class="footer__tagline">Bijoux colorés, faits avec amour.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Liens du pied de page">
+        <ul>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#story">Notre histoire</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <p>Suivez-nous</p>
+        <div class="social-links">
+          <a href="https://instagram.com/bisousbisette" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://pinterest.com/bisousbisette" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4c0 2.8-1.5 4.5-3.5 4.5-0.7 0-1.3-0.4-1.5-0.8L10.5 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Bisous Bisette — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
