@@ -1,5 +1,5 @@
 /* =============================================
-   BISOUS BISETTE — Interactions
+   BISOU BISETTE — Interactions
    ============================================= */
 
 'use strict';
@@ -90,7 +90,7 @@ if (newsletterForm) {
     }
 
     nlSuccess.style.color = '';
-    nlSuccess.textContent = '🎉 Merci ! Tu fais partie de la famille Bisous Bisette.';
+    nlSuccess.textContent = '🎉 Merci ! Tu fais partie de la famille Bisou Bisette.';
     emailInput.value = '';
     setTimeout(() => { nlSuccess.textContent = ''; }, 5000);
   });
